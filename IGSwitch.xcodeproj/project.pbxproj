@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EB72C221B7FDE02008AB7A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB72C211B7FDE02008AB7A1 /* AppDelegate.swift */; };
+		2EB72C241B7FDE02008AB7A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB72C231B7FDE02008AB7A1 /* ViewController.swift */; };
+		2EB72C271B7FDE02008AB7A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB72C251B7FDE02008AB7A1 /* Main.storyboard */; };
+		2EB72C291B7FDE02008AB7A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB72C281B7FDE02008AB7A1 /* Assets.xcassets */; };
+		2EB72C2C1B7FDE02008AB7A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB72C2A1B7FDE02008AB7A1 /* LaunchScreen.storyboard */; };
+		2EB72C361B7FDE56008AB7A1 /* IGSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB72C351B7FDE56008AB7A1 /* IGSwitch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EB72C1E1B7FDE02008AB7A1 /* IGSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EB72C211B7FDE02008AB7A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EB72C231B7FDE02008AB7A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EB72C261B7FDE02008AB7A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EB72C281B7FDE02008AB7A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EB72C2B1B7FDE02008AB7A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EB72C2D1B7FDE02008AB7A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EB72C351B7FDE56008AB7A1 /* IGSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IGSwitch.swift; path = ../../../projects/IGSwitch/IGSwitch/IGSwitch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EB72C1B1B7FDE02008AB7A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EB72C151B7FDE02008AB7A1 = {
+			isa = PBXGroup;
+			children = (
+				2EB72C201B7FDE02008AB7A1 /* IGSwitch */,
+				2EB72C1F1B7FDE02008AB7A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EB72C1F1B7FDE02008AB7A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EB72C1E1B7FDE02008AB7A1 /* IGSwitch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EB72C201B7FDE02008AB7A1 /* IGSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				2EB72C211B7FDE02008AB7A1 /* AppDelegate.swift */,
+				2EB72C231B7FDE02008AB7A1 /* ViewController.swift */,
+				2EB72C351B7FDE56008AB7A1 /* IGSwitch.swift */,
+				2EB72C251B7FDE02008AB7A1 /* Main.storyboard */,
+				2EB72C281B7FDE02008AB7A1 /* Assets.xcassets */,
+				2EB72C2A1B7FDE02008AB7A1 /* LaunchScreen.storyboard */,
+				2EB72C2D1B7FDE02008AB7A1 /* Info.plist */,
+			);
+			path = IGSwitch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EB72C1D1B7FDE02008AB7A1 /* IGSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EB72C301B7FDE02008AB7A1 /* Build configuration list for PBXNativeTarget "IGSwitch" */;
+			buildPhases = (
+				2EB72C1A1B7FDE02008AB7A1 /* Sources */,
+				2EB72C1B1B7FDE02008AB7A1 /* Frameworks */,
+				2EB72C1C1B7FDE02008AB7A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGSwitch;
+			productName = IGSwitch;
+			productReference = 2EB72C1E1B7FDE02008AB7A1 /* IGSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EB72C161B7FDE02008AB7A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IG;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ian Gruenig";
+				TargetAttributes = {
+					2EB72C1D1B7FDE02008AB7A1 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 2EB72C191B7FDE02008AB7A1 /* Build configuration list for PBXProject "IGSwitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EB72C151B7FDE02008AB7A1;
+			productRefGroup = 2EB72C1F1B7FDE02008AB7A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EB72C1D1B7FDE02008AB7A1 /* IGSwitch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EB72C1C1B7FDE02008AB7A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB72C2C1B7FDE02008AB7A1 /* LaunchScreen.storyboard in Resources */,
+				2EB72C291B7FDE02008AB7A1 /* Assets.xcassets in Resources */,
+				2EB72C271B7FDE02008AB7A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EB72C1A1B7FDE02008AB7A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB72C241B7FDE02008AB7A1 /* ViewController.swift in Sources */,
+				2EB72C361B7FDE56008AB7A1 /* IGSwitch.swift in Sources */,
+				2EB72C221B7FDE02008AB7A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EB72C251B7FDE02008AB7A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EB72C261B7FDE02008AB7A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EB72C2A1B7FDE02008AB7A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EB72C2B1B7FDE02008AB7A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EB72C2E1B7FDE02008AB7A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EB72C2F1B7FDE02008AB7A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EB72C311B7FDE02008AB7A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IGSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iangruenig.IGSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EB72C321B7FDE02008AB7A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IGSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iangruenig.IGSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EB72C191B7FDE02008AB7A1 /* Build configuration list for PBXProject "IGSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB72C2E1B7FDE02008AB7A1 /* Debug */,
+				2EB72C2F1B7FDE02008AB7A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EB72C301B7FDE02008AB7A1 /* Build configuration list for PBXNativeTarget "IGSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB72C311B7FDE02008AB7A1 /* Debug */,
+				2EB72C321B7FDE02008AB7A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EB72C161B7FDE02008AB7A1 /* Project object */;
+}
