@@ -4,7 +4,7 @@ A customisable Switch based on UIControl and written in Swift 2.0.
 
 ## Example
 
-<img width=“316” src=“./example.gif”> 
+<img width="316" src="./example.gif">
 
 ## Requirements
 
