@@ -62,7 +62,17 @@ class IGSwitch: UIControl {
   }
   
   var selectedIndex: Int = 0
-  var font: UIFont = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+  var font: UIFont = UIFont.preferredFontForTextStyle(UIFontTextStyleBody) {
+      didSet {
+          for label in backgroundLabels {
+              label.font = font
+          }
+
+          for label in frontLabels {
+              label.font = font
+          }
+      }
+  }
   
   private var backgroundLabels: [UILabel] = []
   private var sliderView: UIView!
