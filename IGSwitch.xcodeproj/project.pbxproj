@@ -12,7 +12,7 @@
 		2EB72C271B7FDE02008AB7A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB72C251B7FDE02008AB7A1 /* Main.storyboard */; };
 		2EB72C291B7FDE02008AB7A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB72C281B7FDE02008AB7A1 /* Assets.xcassets */; };
 		2EB72C2C1B7FDE02008AB7A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB72C2A1B7FDE02008AB7A1 /* LaunchScreen.storyboard */; };
-		2EB72C361B7FDE56008AB7A1 /* IGSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB72C351B7FDE56008AB7A1 /* IGSwitch.swift */; };
+		44049DED1F4C817D00A0AB77 /* IGSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44049DEC1F4C817D00A0AB77 /* IGSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		2EB72C281B7FDE02008AB7A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EB72C2B1B7FDE02008AB7A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EB72C2D1B7FDE02008AB7A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EB72C351B7FDE56008AB7A1 /* IGSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IGSwitch.swift; path = ../../../projects/IGSwitch/IGSwitch/IGSwitch.swift; sourceTree = "<group>"; };
+		44049DEC1F4C817D00A0AB77 /* IGSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				2EB72C211B7FDE02008AB7A1 /* AppDelegate.swift */,
 				2EB72C231B7FDE02008AB7A1 /* ViewController.swift */,
-				2EB72C351B7FDE56008AB7A1 /* IGSwitch.swift */,
+				44049DEC1F4C817D00A0AB77 /* IGSwitch.swift */,
 				2EB72C251B7FDE02008AB7A1 /* Main.storyboard */,
 				2EB72C281B7FDE02008AB7A1 /* Assets.xcassets */,
 				2EB72C2A1B7FDE02008AB7A1 /* LaunchScreen.storyboard */,
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					2EB72C1D1B7FDE02008AB7A1 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -138,8 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44049DED1F4C817D00A0AB77 /* IGSwitch.swift in Sources */,
 				2EB72C241B7FDE02008AB7A1 /* ViewController.swift in Sources */,
-				2EB72C361B7FDE56008AB7A1 /* IGSwitch.swift in Sources */,
 				2EB72C221B7FDE02008AB7A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +259,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iangruenig.IGSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -270,6 +272,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iangruenig.IGSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
