@@ -11,14 +11,14 @@ import UIKit
 @IBDesignable
 class IGSwitch: UIControl {
   
-  @IBInspectable var sliderColor: UIColor = UIColor.whiteColor() {
+  @IBInspectable var sliderColor: UIColor = UIColor.white {
     didSet {
       sliderView.backgroundColor = sliderColor
     }
   }
   
   
-  @IBInspectable var textColorFront: UIColor = UIColor.darkGrayColor() {
+  @IBInspectable var textColorFront: UIColor = UIColor.darkGray {
     didSet {
       frontLabels[0].textColor = textColorFront
       frontLabels[1].textColor = textColorFront
@@ -26,7 +26,7 @@ class IGSwitch: UIControl {
   }
   
   
-  @IBInspectable var textColorBack: UIColor = UIColor.whiteColor() {
+  @IBInspectable var textColorBack: UIColor = UIColor.white {
     didSet {
       backgroundLabels[0].textColor = textColorFront
       backgroundLabels[1].textColor = textColorFront
@@ -62,7 +62,7 @@ class IGSwitch: UIControl {
   }
   
   var selectedIndex: Int = 0
-  var font: UIFont = UIFont.preferredFontForTextStyle(UIFontTextStyleBody) {
+  var font: UIFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body) {
       didSet {
           for label in backgroundLabels {
               label.font = font
@@ -101,7 +101,7 @@ class IGSwitch: UIControl {
   }
   
   private func setupBackground() {
-    userInteractionEnabled = true
+    isUserInteractionEnabled = true
     layer.cornerRadius = cornerRadius
   }
   
@@ -112,12 +112,12 @@ class IGSwitch: UIControl {
       label.font = font
       label.textColor = textColorBack
       label.adjustsFontSizeToFitWidth = true
-      label.textAlignment = .Center
+      label.textAlignment = .center
       addSubview(label)
       backgroundLabels.append(label)
       
-      label.userInteractionEnabled = true
-      let recognizer = UITapGestureRecognizer(target: self, action: "handleRecognizerTap:")
+      label.isUserInteractionEnabled = true
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(IGSwitch.handleRecognizerTap(recognizer:)))
       label.addGestureRecognizer(recognizer)
     }
   }
@@ -127,7 +127,7 @@ class IGSwitch: UIControl {
     sliderView.backgroundColor = sliderColor
     sliderView.clipsToBounds = true
     
-    let sliderRecognizer = UIPanGestureRecognizer(target: self, action: "sliderMoved:")
+    let sliderRecognizer = UIPanGestureRecognizer(target: self, action: #selector(IGSwitch.sliderMoved(recognizer:)))
     sliderView.addGestureRecognizer(sliderRecognizer)
     
     addSubview(sliderView)
@@ -140,7 +140,7 @@ class IGSwitch: UIControl {
       label.font = font
       label.textColor = textColorFront
       label.adjustsFontSizeToFitWidth = true
-      label.textAlignment = .Center
+      label.textAlignment = .center
       sliderView.addSubview(label)
       frontLabels.append(label)
     }
@@ -149,7 +149,7 @@ class IGSwitch: UIControl {
   // MARK: Layout
   
   private func layoutSlider() {
-    layoutSliderView(selectedIndex)
+    layoutSliderView(index: selectedIndex)
     layoutBackgroundLabels()
     layoutFrontLabels()
   }
@@ -177,45 +177,45 @@ class IGSwitch: UIControl {
   
   func setSelectedIndex(index: Int, animated: Bool) {
     assert(index >= 0 && index < 2)
-    updateSlider(index, animated: animated)
+    updateSlider(index: index, animated: animated)
   }
   
   // MARK: Update Slider
   
   private func updateSlider(index: Int, animated: Bool) {
-    animated ? updateSliderWithAnimation(index) : updateSliderWithoutAnimation(index)
+    animated ? updateSliderWithAnimation(index: index) : updateSliderWithoutAnimation(index: index)
   }
   
   private func updateSliderWithoutAnimation(index: Int) {
-    updateSlider(index)
-    updateSelectedIndex(index)
+    updateSlider(index: index)
+    updateSelectedIndex(index: index)
   }
   
   private func updateSlider(index: Int) {
-    layoutSliderView(index)
+    layoutSliderView(index: index)
     layoutFrontLabels()
   }
   
   private func updateSelectedIndex(index: Int) {
     if selectedIndex != index {
       selectedIndex = index
-      sendActionsForControlEvents(UIControlEvents.ValueChanged)
+      sendActions(for: UIControlEvents.valueChanged)
     }
   }
   
   private func updateSliderWithAnimation(index: Int) {
-    let duration = calculateAnimationDuration(index)
-    UIView.animateWithDuration(duration, delay: 0, options: .CurveEaseIn, animations: { () -> Void in
-      self.updateSlider(index)
+    let duration = calculateAnimationDuration(index: index)
+    UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: { () -> Void in
+      self.updateSlider(index: index)
       }, completion: { (finished) -> Void in
-        self.updateSelectedIndex(index)
+        self.updateSelectedIndex(index: index)
     })
   }
   
-  private func calculateAnimationDuration(index: Int) -> NSTimeInterval {
+  private func calculateAnimationDuration(index: Int) -> TimeInterval {
     let targetX = sliderWidth * CGFloat(index) + sliderInset
     let distance = targetX - sliderView.frame.origin.x
-    let duration = NSTimeInterval(distance / 300)
+    let duration = TimeInterval(distance / 300)
     return duration
   }
   
@@ -223,17 +223,17 @@ class IGSwitch: UIControl {
   
   func handleRecognizerTap(recognizer: UITapGestureRecognizer) {
     let index = recognizer.view!.tag
-    updateSliderWithAnimation(index)
+    updateSliderWithAnimation(index: index)
   }
   
   // MARK: UIPanGestureRecognizer
   
   func sliderMoved(recognizer: UIPanGestureRecognizer) {
     switch recognizer.state {
-    case .Changed:
-      panGestureRecognizerChanged(recognizer)
-    case .Ended, .Cancelled, .Failed:
-      panGestureRecognizerFinished(recognizer)
+    case .changed:
+      panGestureRecognizerChanged(recognizer: recognizer)
+    case .ended, .cancelled, .failed:
+      panGestureRecognizerFinished(recognizer: recognizer)
     default:
       return
     }
@@ -243,9 +243,9 @@ class IGSwitch: UIControl {
     let minPos = sliderInset
     let maxPos = minPos + sliderView.bounds.width
     
-    let translation = recognizer.translationInView(recognizer.view!)
+    let translation = recognizer.translation(in: recognizer.view!)
     recognizer.view!.center.x += translation.x
-    recognizer.setTranslation(CGPointZero, inView: recognizer.view!)
+    recognizer.setTranslation(CGPoint.zero, in: recognizer.view!)
       
     if sliderView.frame.origin.x < minPos {
       sliderView.frame.origin.x = minPos
@@ -258,7 +258,7 @@ class IGSwitch: UIControl {
     
   private func panGestureRecognizerFinished(recognizer: UIPanGestureRecognizer) {
     let index = sliderView.center.x > sliderWidth ? 1 : 0
-    updateSliderWithAnimation(index)
+    updateSliderWithAnimation(index: index)
   }
   
 }
