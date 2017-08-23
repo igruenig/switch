@@ -1,6 +1,6 @@
 # IGSwitch
 
-A customisable Switch based on UIControl and written in Swift 2.0.
+A customisable Switch based on UIControl.
 
 ## Example
 
@@ -8,16 +8,12 @@ A customisable Switch based on UIControl and written in Swift 2.0.
 
 ## Requirements
 
-+ Swift 2.0
++ Swift 3.0
 + iOS 8.0+
 
 ## Installation
 
 Include the `IGSwitch.swift` source file directly in your project. Then in storyboard drag out a UIView to a scene and assign the class to it. Of course you can also add the switch programmatically.
-
-## Author
-
-Ian Gruenig - https://twitter.com/iangruenig
 
 ## License
 
