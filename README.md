@@ -8,7 +8,7 @@ A customisable Switch based on UIControl.
 
 ## Requirements
 
-+ Swift 3.0
++ Swift 4.0
 + iOS 8.0+
 
 ## Installation
