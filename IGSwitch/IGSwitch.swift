@@ -28,8 +28,8 @@ class IGSwitch: UIControl {
   
   @IBInspectable var textColorBack: UIColor = UIColor.white {
     didSet {
-      backgroundLabels[0].textColor = textColorFront
-      backgroundLabels[1].textColor = textColorFront
+      backgroundLabels[0].textColor = textColorBack
+      backgroundLabels[1].textColor = textColorBack
     }
   }
   
@@ -221,14 +221,14 @@ class IGSwitch: UIControl {
   
   // MARK: UITapGestureRecognizer
   
-  func handleRecognizerTap(recognizer: UITapGestureRecognizer) {
+  @objc func handleRecognizerTap(recognizer: UITapGestureRecognizer) {
     let index = recognizer.view!.tag
     updateSliderWithAnimation(index: index)
   }
   
   // MARK: UIPanGestureRecognizer
   
-  func sliderMoved(recognizer: UIPanGestureRecognizer) {
+  @objc func sliderMoved(recognizer: UIPanGestureRecognizer) {
     switch recognizer.state {
     case .changed:
       panGestureRecognizerChanged(recognizer: recognizer)
