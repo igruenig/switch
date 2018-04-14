@@ -1,6 +1,6 @@
 # IGSwitch
 
-A customisable Switch based on UIControl.
+A customizable Switch based on UIControl.
 
 ## Example
 
