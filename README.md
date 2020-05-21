@@ -1,4 +1,4 @@
-# IGSwitch
+# Switch
 
 A customizable Switch based on UIControl.
 
